@@ -1,0 +1,54 @@
+within every obstacle there is an opportunity to improve our conditions.
+You conquer your first mountain. You are conquerd by your second mountain.
+
+You have power over your mind not outside event. zrelise this, and ou will find the strngth
+There is zero correlation between being the best talker and and having thr best ideas.
+Even more powerful than fate is the courage that bears it steadfastly.
+
+
+
+
+Problem
+ 
+1.   	Get only the employee id of all employees from file “employees.txt”
+2.   	Get the total number of employees
+3.   	Mask employee mobiles numbers and change them with *
+4.       Open employees.txt and write the following data. (if you do not have employees.txt ready)
+ 
+E1001:James:FIN:50000:987654371 E1002:Smith:BD:73000:987654381 E1003:Kevin:TECH:78000:987654341 E1004:Raj:TECH:145000:987654351 E1005:Prem:FIN:95000:987654321 E1006:Guru:BD:195000:987654311 E1006:Guru:BD:195000:987654311
+ 
+5.   	Get the last used employee id
+6.   	Get maximum salary earned by the employees
+7.   	Hide duplicate rows from the employees.txt
+8.   	Change the permission of employees.txt to
+a.       user = rwx
+b.       group = rw-
+c.       others = r--
+9.   	Change the permission of employees.txt to
+a.       user = r--
+b.       group = ---
+c.       others = ---
+10.   Try cat >> employees.txt
+11.   Change the permission of employees.txt to
+a.       user = -w-
+b.       group = ---
+c.       others = ---
+12.   Try cat employees.txt
+13.   Find all the open directories by the current logged in user
+
+14.   Find the identical files in the present working directory
+
+
+
+
+
+
+
+
+
+E1001 James FIN 40000 987654371
+E1002 Smith BD 23000 987654381
+E1003 KEVIN TECH 54000 987654341
+E1004 RAJ TECH 125000 987654321
+E1005 PREM FIN 75000 987654321
+E1006 GURU BD 175000 987654311

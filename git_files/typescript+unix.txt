@@ -1,0 +1,388 @@
+typescript:
+if any javascript code can catch the error in the code.
+
+Array.slice()
+
+npm contains code packages!
+npm is software registry
+
+Install the npm – node js
+Install the typescript using npm
+Npm install –g typescript
+Tsc –v
+Create a separate folder for typescript
+Goto visual studio code
+Extensions – install ESLint
+Execution of typescript
+During the execution, the typescript is converted into java script code
+Variable declaration
+Let x=10;
+const y=20;
+LET- without initialization
+Cant declare the variables multiple time
+Const –initialize and values an never be reassigned
+Variable types
+Boolean: true/ false
+Let isBeginner:Boolean=true;
+Number:2441364265865
+String: collection of characters
+String
+in typescript we can also use template string
+template string
+can have multiple lines with embedded expression
+NULL and Undefined type declarations
+So that it acts as a subtype
+You can assign the value to null in Boolean or string type variable
+ARRAY TYPE
+let list:number[]=[1,2,3]
+Enum
+Called with index value- you can change the value also
+ANY TYPE
+Expecting packages from third party library
+TYPESCRIPT OBJECT TYPES
+Union | or type
+Classes
+Assignment
+Basic arithmetic operations
+ 
+ 
+const title='volkswagon';
+ 
+let isBeginner:boolean=true;
+let total:number=0;
+let name:string='AmudhaAdhirai';
+name=true;
+let sentence:string =`my name is ${name} I am a trainer in typescript`;
+console.log(sentence);
+ 
+let n:null=null;
+let u:undefined =undefined;
+ 
+let isNew:boolean=null;
+let myName:string=undefined;
+ 
+ 
+let list1:number[]=[1,2,3];
+et person1:[string,number]=['amudha',22];
+
+ 
+ENUM KEYWORD
+enum colors {red,green,blue};
+let c:colors=colors.green;
+console.log(c);
+ 
+enum colors {red =5,green,blue};
+
+ANY
+let randomvalue:any=10;
+randomvalue=true;
+randomvalue='amudha';
+Typescript object types
+const car: { type: string, model: string, year: number } = {
+    type: "Toyota",
+    model: "Corolla",
+    year: 2009
+  };
+ 
+  console.log(car);
+
+union |or types
+ function printStatusCode(code: string | number) {
+    console.log(`My status code is ${code}.`)
+  }
+ 
+  printStatusCode(404);
+  printStatusCode('404');
+ 
+classes
+ class Person {
+    name: string;
+  }
+       
+  const person = new Person();
+  person.name = "Jane";
+  
+
+
+%%%%%%%%%%%%%% Unix %%%%%%%%%%%%%%%%%%%%%%%
+Unix was introduced n late 90's.
+
+It has a root directory/
+File system:  Logical collection of files on the disk
+Collection of record is a file.
+Everything in unix is considered to be a file.
+It has a root directory
+inode- each file/directory is uniqely identified by a unique identifier
+-i --> unique i node sturcture to track data.
+assume pointers in the inode
+
+Buffer:
+input --> buffer --> processor --> buffer --> output
+for terminal symbol ctrl+d
+
+cat>> filename to append something
+cat sample>demo  --> content copied to demo!
+cat -n demo --> list down all the things(number of lines in file basically)
+cat < demo ( it uses the file name as the input and the output will be shown in terminal)
+cat > file1 (to write content in the file)
+ cat demo sample file1 > file2 to add content in file2
+(merging files in one)
+move --> m0ove file file content to the another
+mv file2 file1(here file1 will not exit)
+cat file1
+
+ls
+blue color is the directory
+ls -a --> for all the hidden files
+ls -l --> long listing very imp
+
+copy command
+cp from src to des
+=cp demo sample
+copied file will be updated.
+
+remove file is rem
+rm
+rmdir for directory.
+
+pwd- print workign dir3ectory
+
+word count
+=wc demo
+lines words and characters count in a file
+wc -m demo
+wc -l demo
+wc -w demo
+
+df__> this is mounted on which directly
+amunt of disk sapce available on file system
+
+for human readable
+df -h
+
+du --> dispalys the current usage
+date--> cuurent tiem and date
+
+___________________________________________________________________________________
+in order to rename fle use:  mv src to dest
+finding the last modified file: 
+finding hidden files: ~$ find /home -newermt "-15 minutes"
+create a hidden file: ~$ touch .adminAccount
+~$ cat > .adminAccount
+admin@ethnus.com
+AdminPassword	
+____________________________________________________________________________________
+
+Data processing related commands
+piping works
+permission realted comds
+calculating the permission
+Permission Handled
+How to give input using vi editor
+
+
+(((((((((((((((((((((((((((How to give input in the vi editor
+vi file_name
+i inorder to type in vi editor
+esc+:wq
+w is for save and q is for quit
+=vi maha
+=cat maha
+=cat > avatar
+lion, tiger, eagle, fox, giraffe are the animals
+
+apple, orage,kiwi, grapes are the fruits
+=cat avatar
+
+################################### sort command #######################
+concatenate all the standard outputs
+=sort maha
+=sort -r maha--> reverse
+=sort -n maha--> 
+=sort -b  --> sort without using blank spaces
+
+###################### uniq--> filter the adjacent matching lines. ############
+priting the content of file after removing all adjecent lines
+=uniq maha
+=uniq -d maha --> for duplicate values
+=uniq -c maha -->counting lines with duplicacy
+
+%%%%%%%%%%%%%%%%%%%%%%
+tr-> translate,squeeze, and/or delete characters.
+=cat avatar|tr "," "\t"  -> translate
+--> squeez
+=cat avatar | tr -s ","
+-->
+=cat avatar|tr -d ","
+
+%%%%%%%%%%%%%%%%% cut command &&&&&&&&&&&
+Print the selected parts of lines from each file.
+=cut -b1,2 avatar
+-->shows only first 2 characters.
+=cut -b1,2,3,4 maha
+########### Head command -- print the first 10 lines of the file. $$$$$$
+=head maha
+=head -n2 maha --> only 2 lines appears
+head avatar maha
+head -3 maha  --> upto 3 lines
+###################### Tail Command $$$$$$$$$$$$$$
+print the last 10 lines
+tail -n2 maha
+################## comaring options #############
+cmp --> comparing files
+cmp maha avatar  =-->compare based on bytes with position
+
+############### diff - difference used to display the differences in the files.
+-context, unified,version
+
+#######################################################
+diff -c avatar maha
+
+################# comm command ####################
+comp the two sorted line by line. From the std output.
+comm fruits animals
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$ piping ####################
+by using or command
+cat animals|head -7|tail -5
+################# permission $$$$$$$$$$$$$$$
+group
+1) owner
+2)group
+3)all users
+permission types
+read -r
+write -w
+execute -x
+Changing security permission
+
+chmod o
+chmod o+
+chmod o+x
+chmod o+x animals
+
+calcualting the permision
+0 --> ---- --> none
+1--->--x --> execute on;y
+2---> -w- -->write only
+3--> -wx --> write and execute
+4--> r -- --> read only
+5--> r-x --> read and execute
+6--> rw---> read write
+7--> rwx --> read,write,execute
+
+
+chmod u --> u user
+g group
+o owner
+ugo+rwx[filename]
+chmod 777[filename]
+= chmod ugo+rwx animals
+
+ls -lrt : to list all files with change of directory
+
+#################### password ########################+
+change the user account passwords
+
+Passwd[option] [username]
+=sudo passwd root
+
+#####################################################
+
+NR means line
+
+How about just sort.
+
+sort -t, -nk3 user.csv
+where
+
+-t, - defines your delimiter as ,.
+
+-n - gives you numerical sort. Added since you added it in your attempt. If your user field is text only then you dont need it.
+
+-k3 - defines the field (key). user is the third field.
+
+
+
+********************************************************************88
+imp
+~$ awk '{if ($1 !="") print $1}' specialEmployees.txt
+E1001
+E1002
+E1003
+E1004
+E1005
+E1006
+E1001
+E1006
+Raj
+Guru
+~$ awk '{if ($2 !="") print $1}' specialEmployees.txt
+E1001
+E1002
+E1003
+E1004
+E1005
+E1006
+E1001
+E1006
+~$ awk '{if ($2 =="") print $1}' specialEmployees.txt
+Raj
+Guru
+
+&&&&&&&&&&&&&&&&&&&&&&& bash script &&&&&&&&&&&&&&&&&&&&&&&&&
+gt is the greater than symbol.
+
+vi for2.sh: to open the file!! bash file
+:wq! exit ke liye
+-le == less equal to
+
+
+give access to run : chmod +x until1.sh
+./meta1.sh
+* ? [] ' "\ $;  use by \--> back slash.
+
+bash command; which is having substitution of another command is bash command.
+
+seq 1 2 10 from 1 to 10 print and skip 2 lines 
+1
+3
+5
+7
+9
+
+####### bash command ########
+~echo $(seq 1 2 10)
+1 3 5 7 9
+~echo `seq 1 2 10`
+same output
+
+~seq 1 1 10
+########## functions @@@@@@@@@@@@@@
+function_name(){
+list of cmds
+}
+
+
+
+ echo “Enter a number”
+ read num
+ case $num in
+ [0-9]) echo "you have entered a single digit number"
+ ;;
+ [1-9][1-9]) echo "you have entered a two-digit number"
+ ;;
+ [1-9][1-9][1-9]) echo "you have entered a three-digit number"
+ ;;
+ *)
+ echo "your entry does not match any of the conditions"
+ ;;
+ esac
+
+
+
+
+
+
+
+
